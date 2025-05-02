@@ -44,7 +44,10 @@ namespace Netologia.Homework
             {
                 yield return new WaitForFixedUpdate();
                 elapsed += Time.fixedDeltaTime;
-                Vector3 pos = Vector3.Lerp(from, to, elapsed / duration);
+                //Vector3 pos = Vector3.Lerp(from, to, elapsed / duration);
+                float t = elapsed / duration;
+                t = Mathf.SmoothStep(0f, 1f, t);
+                Vector3 pos = Vector3.Lerp(from, to, t);
                 _rb.MovePosition(pos);
             }
 
