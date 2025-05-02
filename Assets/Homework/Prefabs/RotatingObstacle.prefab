@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3754390863120917870}
   - component: {fileID: 912826914856994112}
   - component: {fileID: 5169887703716875509}
+  - component: {fileID: 864900751752875989}
   m_Layer: 0
   m_Name: RotatingObstacle
   m_TagString: Untagged
@@ -147,3 +148,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotate: {x: 0, y: 0, z: 90}
+--- !u!114 &864900751752875989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4197431975181624756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2979b5a16cf3f0746b9010225a91c77f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _start: {x: -3, y: 0, z: 0}
+  _end: {x: 3, y: 0, z: 0}
+  _speed: 3
+  _delay: 0.5
